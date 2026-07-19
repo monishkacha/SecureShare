@@ -1,0 +1,633 @@
+/* =====================================================
+   CUSTOM FONT
+===================================================== */
+
+@font-face {
+    font-family: "Changa One";
+    src: url("../assets/fonts/ChangaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* =====================================================
+   WHOLE DASHBOARD PAGE
+===================================================== */
+
+.dashboard-page {
+    min-height: 100vh;
+
+    background-color: #ffee8c;
+
+    background-image:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255, 255, 255, 0.5) 0px,
+            rgba(255, 255, 255, 0.5) 3px,
+            transparent 4px
+        );
+
+    background-size: 42px 42px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =====================================================
+   MAIN CONTENT CONTAINER
+===================================================== */
+
+.dashboard-content {
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 55px 30px 70px;
+}
+
+
+/* =====================================================
+   DASHBOARD HERO
+===================================================== */
+
+.dashboard-hero {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 38px;
+}
+
+
+/* =====================================================
+   SMALL LABEL
+===================================================== */
+
+.dashboard-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    padding: 7px 15px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 100px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.8px;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.dashboard-hero h1 {
+    margin: 0 0 10px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 64px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #29261f;
+}
+
+
+/* =====================================================
+   HERO DESCRIPTION
+===================================================== */
+
+.dashboard-description {
+    max-width: 520px;
+
+    margin: 0;
+
+    color: #625c49;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+===================================================== */
+
+.logout-button {
+    padding: 11px 22px;
+
+    background-color: transparent;
+
+    color: #29261f;
+
+    border: 2px solid #29261f;
+
+    border-radius: 100px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 3px 3px 0 #29261f;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.2s ease;
+}
+
+
+.logout-button:hover {
+    background-color: #f4a261;
+
+    transform: translate(-2px, -2px);
+
+    box-shadow: 5px 5px 0 #29261f;
+}
+
+
+.logout-button:active {
+    transform: translate(2px, 2px);
+
+    box-shadow: 1px 1px 0 #29261f;
+}
+
+
+/* =====================================================
+   ACTION CARDS GRID
+===================================================== */
+
+.dashboard-actions {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 55px;
+}
+
+
+/* =====================================================
+   INDIVIDUAL ACTION CARD
+===================================================== */
+
+.action-card {
+    position: relative;
+
+    min-height: 310px;
+
+    padding: 32px;
+
+    border: 3px solid #29261f;
+
+    border-radius: 22px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =====================================================
+   DIFFERENT CARD BACKGROUNDS
+===================================================== */
+
+.upload-action {
+    background-color: #fffdf2;
+
+    box-shadow: 8px 8px 0 #29261f;
+}
+
+
+.files-action {
+    background-color: #f4a261;
+
+    box-shadow: 8px 8px 0 #29261f;
+}
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.action-card:hover {
+    transform: translate(-4px, -4px);
+
+    box-shadow: 12px 12px 0 #29261f;
+}
+
+
+/* =====================================================
+   CARD NUMBER
+===================================================== */
+
+.action-number {
+    position: absolute;
+
+    top: 25px;
+    right: 28px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 46px;
+
+    color: rgba(41, 38, 31, 0.15);
+}
+
+
+/* =====================================================
+   ACTION ICON
+===================================================== */
+
+.action-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-bottom: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffee8c;
+
+    border: 3px solid #29261f;
+
+    border-radius: 16px;
+
+    color: #29261f;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 4px 4px 0 #29261f;
+
+    transform: rotate(-4deg);
+}
+
+
+.files-action .action-icon {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 9px;
+
+    transform: rotate(4deg);
+}
+
+
+/* =====================================================
+   ACTION CARD HEADING
+===================================================== */
+
+.action-card h2 {
+    margin: 0 0 10px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 36px;
+
+    font-weight: 400;
+
+    color: #29261f;
+}
+
+
+/* =====================================================
+   ACTION CARD DESCRIPTION
+===================================================== */
+
+.action-card p {
+    max-width: 370px;
+
+    margin: 0 0 25px;
+
+    color: #625c49;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.files-action p {
+    color: #51483b;
+}
+
+
+/* =====================================================
+   ACTION LINK
+===================================================== */
+
+.action-link {
+    display: inline-block;
+
+    color: #29261f;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border-bottom: 2px solid #29261f;
+
+    padding-bottom: 3px;
+}
+
+
+/* =====================================================
+   RECENT FILES SECTION
+===================================================== */
+
+.recent-files-section {
+    padding: 35px;
+
+    background-color: #fffdf2;
+
+    border: 3px solid #29261f;
+
+    border-radius: 22px;
+
+    box-shadow: 8px 8px 0 #29261f;
+
+    margin-bottom: 40px;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.section-heading {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 22px;
+
+    margin-bottom: 22px;
+
+    border-bottom: 2px solid #29261f;
+}
+
+
+.section-heading p {
+    margin: 0 0 5px;
+
+    color: #b56b2f;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 37px;
+
+    font-weight: 400;
+
+    color: #29261f;
+}
+
+
+/* =====================================================
+   VIEW ALL BUTTON
+===================================================== */
+
+.view-all-button {
+    padding: 9px 17px;
+
+    background-color: #ffee8c;
+
+    color: #29261f;
+
+    border: 2px solid #29261f;
+
+    border-radius: 100px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background-color 0.2s ease;
+}
+
+
+.view-all-button:hover {
+    background-color: #f4a261;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FILE LIST
+===================================================== */
+
+.dashboard-files {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =====================================================
+   SECURITY SECTION
+===================================================== */
+
+.dashboard-security {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px 24px;
+
+    background-color: #f4a261;
+
+    border: 3px solid #29261f;
+
+    border-radius: 16px;
+
+    box-shadow: 5px 5px 0 #29261f;
+}
+
+
+/* =====================================================
+   SECURITY SYMBOL
+===================================================== */
+
+.security-symbol {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 11px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   SECURITY TEXT
+===================================================== */
+
+.dashboard-security strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #29261f;
+
+    font-size: 14px;
+}
+
+
+.dashboard-security p {
+    margin: 0;
+
+    color: #5a5041;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .dashboard-content {
+        padding: 45px 22px 60px;
+    }
+
+
+    .dashboard-hero h1 {
+        font-size: 52px;
+    }
+
+
+    .dashboard-actions {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .dashboard-content {
+        padding: 35px 16px 50px;
+    }
+
+
+    .dashboard-hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .dashboard-hero h1 {
+        font-size: 45px;
+    }
+
+
+    .action-card {
+        min-height: auto;
+
+        padding: 25px;
+
+        border-radius: 18px;
+    }
+
+
+    .recent-files-section {
+        padding: 25px 20px;
+
+        border-radius: 18px;
+    }
+
+
+    .section-heading {
+        align-items: center;
+    }
+
+
+    .section-heading h2 {
+        font-size: 31px;
+    }
+
+
+    .dashboard-security {
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,165 @@
+/* =====================================================
+   CUSTOM FONT
+===================================================== */
+
+@font-face {
+    font-family: "Changa One";
+    src: url("../assets/fonts/ChangaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    width: 100%;
+    min-height: 74px;
+
+    padding: 0 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffee8c;
+
+    border-bottom: 3px solid #29261f;
+
+    color: #29261f;
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =====================================================
+   SECURESHARE LOGO
+===================================================== */
+
+.navbar-logo {
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    letter-spacing: 0.5px;
+
+    color: #29261f;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   SMALL DECORATIVE DOT
+===================================================== */
+
+.navbar-logo::after {
+    content: ".";
+
+    color: #f4a261;
+
+    font-size: 38px;
+}
+
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+.navbar-title {
+    padding: 8px 16px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 100px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   SUBTLE NAVBAR SHADOW
+===================================================== */
+
+.navbar::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -7px;
+
+    height: 4px;
+
+    background-color: rgba(41, 38, 31, 0.12);
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 68px;
+
+        padding: 0 24px;
+    }
+
+
+    .navbar-logo {
+        font-size: 27px;
+    }
+
+
+    .navbar-title {
+        font-size: 12px;
+
+        padding: 7px 14px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 0 16px;
+    }
+
+
+    .navbar-logo {
+        font-size: 24px;
+    }
+
+
+    .navbar-title {
+        max-width: 140px;
+
+        overflow: hidden;
+
+        white-space: nowrap;
+
+        text-overflow: ellipsis;
+    }
+
+}

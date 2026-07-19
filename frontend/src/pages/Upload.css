@@ -1,0 +1,622 @@
+/* =====================================================
+   CUSTOM FONT
+===================================================== */
+
+@font-face {
+    font-family: "Changa One";
+    src: url("../assets/fonts/ChangaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* =====================================================
+   WHOLE UPLOAD PAGE
+===================================================== */
+
+.upload-page {
+    min-height: 100vh;
+
+    background-color: #ffee8c;
+
+    background-image:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255, 255, 255, 0.5) 0px,
+            rgba(255, 255, 255, 0.5) 3px,
+            transparent 4px
+        );
+
+    background-size: 42px 42px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =====================================================
+   MAIN CONTENT CONTAINER
+===================================================== */
+
+.upload-content {
+    width: 100%;
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    padding: 55px 24px 60px;
+}
+
+
+/* =====================================================
+   PAGE HEADING SECTION
+===================================================== */
+
+.upload-heading {
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+
+/* =====================================================
+   SMALL SECURE STORAGE LABEL
+===================================================== */
+
+.upload-label {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    margin-bottom: 16px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 100px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   MAIN PAGE HEADING
+===================================================== */
+
+.upload-heading h1 {
+    margin: 0 0 14px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 62px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 1px;
+
+    color: #29261f;
+}
+
+
+/* =====================================================
+   PAGE DESCRIPTION
+===================================================== */
+
+.upload-description {
+    max-width: 490px;
+
+    margin: 0 auto;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #625c49;
+}
+
+
+/* =====================================================
+   MAIN UPLOAD CARD
+===================================================== */
+
+.upload-card {
+    position: relative;
+
+    padding: 40px;
+
+    background-color: #fffdf2;
+
+    border: 3px solid #29261f;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow: 10px 10px 0 #29261f;
+}
+
+
+/* =====================================================
+   UPLOAD ARROW ICON
+===================================================== */
+
+.upload-icon {
+    width: 68px;
+    height: 68px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffee8c;
+
+    border: 3px solid #29261f;
+
+    border-radius: 18px;
+
+    color: #29261f;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    transform: rotate(-4deg);
+
+    box-shadow: 4px 4px 0 #f4a261;
+}
+
+
+/* =====================================================
+   SELECT A FILE HEADING
+===================================================== */
+
+.upload-card h2 {
+    margin: 0 0 8px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 36px;
+    font-weight: 400;
+
+    letter-spacing: 0.5px;
+
+    color: #29261f;
+}
+
+
+/* =====================================================
+   TEXT BELOW SELECT A FILE
+===================================================== */
+
+.upload-hint {
+    margin-bottom: 26px;
+
+    color: #746d58;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FILE SELECTION AREA
+===================================================== */
+
+.file-select-area {
+    min-height: 145px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    background-color: #fff8cc;
+
+    border: 3px dashed #29261f;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =====================================================
+   FILE AREA HOVER
+===================================================== */
+
+.file-select-area:hover {
+    background-color: #ffee8c;
+
+    transform: translateY(-3px);
+
+    box-shadow: 5px 5px 0 rgba(41, 38, 31, 0.18);
+}
+
+
+/* =====================================================
+   HIDE DEFAULT FILE INPUT
+===================================================== */
+
+.file-select-area input {
+    display: none;
+}
+
+
+/* =====================================================
+   CUSTOM BROWSE FILES BUTTON
+===================================================== */
+
+.choose-file-button {
+    padding: 11px 24px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 100px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.file-select-area:hover .choose-file-button {
+    transform: scale(1.05);
+
+    background-color: #3b372d;
+}
+
+
+/* =====================================================
+   NO FILE SELECTED / FILE NAME TEXT
+===================================================== */
+
+.file-status {
+    max-width: 90%;
+
+    color: #746d58;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+    font-style: italic;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =====================================================
+   SELECTED FILE INFORMATION BOX
+===================================================== */
+
+.selected-file {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #ffee8c;
+
+    border: 2px solid #29261f;
+
+    border-radius: 14px;
+
+    text-align: left;
+
+    box-shadow: 3px 3px 0 rgba(41, 38, 31, 0.15);
+}
+
+
+/* =====================================================
+   FILE SYMBOL BOX
+===================================================== */
+
+.file-symbol {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    margin-right: 14px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 10px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   FILE INFORMATION CONTAINER
+===================================================== */
+
+.file-info {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* FILE NAME */
+
+.file-info strong {
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* FILE SIZE */
+
+.file-info span {
+    margin-top: 4px;
+
+    color: #625c49;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   MAIN UPLOAD BUTTON
+===================================================== */
+
+.upload-button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border: 3px solid #29261f;
+
+    border-radius: 12px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 22px;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow: 5px 5px 0 #f4a261;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.2s ease;
+}
+
+
+/* =====================================================
+   UPLOAD BUTTON HOVER
+===================================================== */
+
+.upload-button:hover {
+    background-color: #3b372d;
+
+    transform: translate(-2px, -2px);
+
+    box-shadow: 7px 7px 0 #f4a261;
+}
+
+
+/* =====================================================
+   UPLOAD BUTTON CLICK
+===================================================== */
+
+.upload-button:active {
+    transform: translate(2px, 2px);
+
+    box-shadow: 2px 2px 0 #f4a261;
+}
+
+
+/* =====================================================
+   SUCCESS / ERROR MESSAGE
+===================================================== */
+
+.upload-message {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 18px;
+
+    background-color: #fff4ad;
+
+    color: #413c2e;
+
+    border: 1px solid #d7c96e;
+
+    border-radius: 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   SECURITY NOTE BELOW CARD
+===================================================== */
+
+.security-note {
+    margin-top: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #514c3c;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   TABLET RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .upload-content {
+        padding: 45px 20px 55px;
+    }
+
+
+    .upload-heading h1 {
+        font-size: 52px;
+    }
+
+
+    .upload-card {
+        padding: 32px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .upload-content {
+        padding: 35px 16px 45px;
+    }
+
+
+    .upload-heading h1 {
+        font-size: 44px;
+    }
+
+
+    .upload-description {
+        font-size: 15px;
+    }
+
+
+    .upload-card {
+        padding: 26px 20px;
+
+        border-radius: 18px;
+
+        box-shadow: 6px 6px 0 #29261f;
+    }
+
+
+    .upload-card h2 {
+        font-size: 30px;
+    }
+
+
+    .upload-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 30px;
+    }
+
+
+    .file-select-area {
+        min-height: 125px;
+
+        padding: 20px 15px;
+    }
+
+
+    .upload-button {
+        font-size: 20px;
+    }
+
+
+    .security-note {
+        padding: 0 10px;
+
+        text-align: center;
+
+        line-height: 1.5;
+    }
+
+}

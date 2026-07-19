@@ -1,0 +1,598 @@
+/* =====================================================
+   CUSTOM FONT
+===================================================== */
+
+@font-face {
+    font-family: "Changa One";
+    src: url("../assets/fonts/ChangaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* =====================================================
+   WHOLE PAGE
+===================================================== */
+
+.register-page {
+    min-height: 100vh;
+
+    background-color: #ffee8c;
+
+    background-image:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255, 255, 255, 0.5) 0px,
+            rgba(255, 255, 255, 0.5) 3px,
+            transparent 4px
+        );
+
+    background-size: 42px 42px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =====================================================
+   CONTENT CONTAINER
+===================================================== */
+
+.register-content {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 60px 30px;
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.register-card {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    min-height: 620px;
+
+    background-color: #fffdf2;
+
+    border: 3px solid #29261f;
+
+    border-radius: 26px;
+
+    overflow: hidden;
+
+    box-shadow: 12px 12px 0 #29261f;
+}
+
+
+/* =====================================================
+   LEFT FORM SECTION
+===================================================== */
+
+.register-form-section {
+    padding: 55px 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: #fffdf2;
+}
+
+
+/* =====================================================
+   FORM HEADING
+===================================================== */
+
+.register-form-heading {
+    margin-bottom: 30px;
+}
+
+
+.register-form-heading > p {
+    margin-bottom: 8px;
+
+    color: #b56b2f;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.register-form-heading h1 {
+    margin: 0 0 10px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 50px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #29261f;
+}
+
+
+.register-form-heading > span {
+    display: block;
+
+    max-width: 450px;
+
+    color: #746d58;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.register-form {
+    width: 100%;
+}
+
+
+/* =====================================================
+   FORM FIELD
+===================================================== */
+
+.register-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+}
+
+
+.register-field label {
+    color: #3c382e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.register-field input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #bdb49a;
+
+    border-radius: 10px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.register-field input::placeholder {
+    color: #aaa18b;
+}
+
+
+.register-field input:focus {
+    border-color: #29261f;
+
+    box-shadow: 4px 4px 0 #ffee8c;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   REGISTER BUTTON
+===================================================== */
+
+.register-button {
+    width: 100%;
+
+    margin-top: 8px;
+
+    padding: 15px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border: 3px solid #29261f;
+
+    border-radius: 11px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    box-shadow: 5px 5px 0 #f4a261;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.2s ease;
+}
+
+
+.register-button:hover {
+    background-color: #3b372d;
+
+    transform: translate(-2px, -2px);
+
+    box-shadow: 7px 7px 0 #f4a261;
+}
+
+
+.register-button:active {
+    transform: translate(2px, 2px);
+
+    box-shadow: 2px 2px 0 #f4a261;
+}
+
+
+/* =====================================================
+   RESPONSE MESSAGE
+===================================================== */
+
+.register-message {
+    margin-top: 18px;
+
+    padding: 10px 14px;
+
+    background-color: #fff4ad;
+
+    border: 1px solid #d7c96e;
+
+    border-radius: 8px;
+
+    color: #413c2e;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   LOGIN LINK
+===================================================== */
+
+.login-link {
+    margin-top: 26px;
+
+    padding-top: 21px;
+
+    border-top: 1px solid #ded8c4;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    font-size: 13px;
+}
+
+
+.login-link span {
+    color: #746d58;
+}
+
+
+.login-link a {
+    color: #9b5727;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #9b5727;
+}
+
+
+.login-link a:hover {
+    color: #29261f;
+
+    border-color: #29261f;
+}
+
+
+/* =====================================================
+   RIGHT VISUAL PANEL
+===================================================== */
+
+.register-visual {
+    padding: 55px 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: #f4a261;
+
+    border-left: 3px solid #29261f;
+}
+
+
+/* =====================================================
+   VISUAL PANEL BADGE
+===================================================== */
+
+.register-badge {
+    width: fit-content;
+
+    margin-bottom: 24px;
+
+    padding: 8px 15px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 100px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =====================================================
+   VISUAL PANEL HEADING
+===================================================== */
+
+.register-visual h2 {
+    margin: 0 0 22px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 57px;
+
+    font-weight: 400;
+
+    line-height: 0.92;
+
+    color: #29261f;
+}
+
+
+/* =====================================================
+   VISUAL PANEL DESCRIPTION
+===================================================== */
+
+.register-visual > p {
+    max-width: 350px;
+
+    margin: 0;
+
+    color: #4e4739;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   THREE STEPS
+===================================================== */
+
+.register-steps {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-top: 35px;
+}
+
+
+.register-step {
+    padding: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    background-color: #ffee8c;
+
+    border: 2px solid #29261f;
+
+    border-radius: 12px;
+
+    box-shadow: 3px 3px 0 #29261f;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.register-step:hover {
+    transform: translate(-2px, -2px);
+
+    box-shadow: 5px 5px 0 #29261f;
+}
+
+
+/* STEP NUMBER */
+
+.register-step > span {
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 9px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 17px;
+}
+
+
+/* STEP TEXT */
+
+.register-step div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.register-step strong {
+    color: #29261f;
+
+    font-size: 13px;
+}
+
+
+.register-step small {
+    color: #675f48;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .register-content {
+        max-width: 650px;
+
+        padding: 45px 25px;
+    }
+
+
+    .register-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .register-form-section {
+        padding: 45px;
+    }
+
+
+    .register-visual {
+        padding: 45px;
+
+        border-left: none;
+
+        border-top: 3px solid #29261f;
+    }
+
+
+    .register-visual h2 {
+        font-size: 50px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .register-content {
+        padding: 30px 16px 45px;
+    }
+
+
+    .register-card {
+        border-radius: 18px;
+
+        box-shadow: 7px 7px 0 #29261f;
+    }
+
+
+    .register-form-section {
+        padding: 35px 25px;
+    }
+
+
+    .register-form-heading h1 {
+        font-size: 41px;
+    }
+
+
+    .register-visual {
+        padding: 35px 25px;
+    }
+
+
+    .register-visual h2 {
+        font-size: 44px;
+    }
+
+
+    .login-link {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 5px;
+    }
+
+}

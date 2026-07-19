@@ -1,0 +1,237 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #f4f7fb;
+  color: #1f2937;
+}
+
+
+/* =========================
+   ROOT REACT CONTAINER
+========================= */
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+/* =========================
+   GENERAL PAGE CONTAINER
+========================= */
+
+.page-container {
+  min-height: calc(100vh - 70px);
+
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================
+   GENERAL CARD
+========================= */
+
+.card {
+  background-color: #ffffff;
+
+  border-radius: 12px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+  color: #111827;
+
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1f2937;
+
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #374151;
+
+  margin-bottom: 10px;
+}
+
+
+/* =========================
+   PARAGRAPHS
+========================= */
+
+p {
+  line-height: 1.6;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+  font-family: inherit;
+
+  font-size: 15px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+input:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  font-family: inherit;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px 20px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+}
+
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: #2563eb;
+
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   MESSAGE TEXT
+========================= */
+
+.message {
+  margin-top: 15px;
+
+  font-size: 14px;
+
+  color: #374151;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+  margin-top: 15px;
+
+  font-size: 14px;
+
+  color: #dc2626;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-message {
+  margin-top: 15px;
+
+  font-size: 14px;
+
+  color: #16a34a;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+  .page-container {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+}

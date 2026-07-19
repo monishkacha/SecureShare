@@ -1,0 +1,230 @@
+    /* =====================================================
+   FILE CARD
+===================================================== */
+
+.file-card {
+    width: 100%;
+
+    padding: 16px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background-color: #fff8cc;
+
+    border: 2px solid #29261f;
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* =====================================================
+   CARD HOVER
+===================================================== */
+
+.file-card:hover {
+    background-color: #ffee8c;
+
+    transform: translateY(-2px);
+
+    box-shadow: 4px 4px 0 #29261f;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.file-card-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    min-width: 0;
+}
+
+
+/* =====================================================
+   FILE TYPE ICON
+===================================================== */
+
+.file-type-icon {
+    width: 54px;
+
+    height: 54px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #f4a261;
+
+    color: #29261f;
+
+    border: 2px solid #29261f;
+
+    border-radius: 11px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    box-shadow: 3px 3px 0 #29261f;
+
+    transform: rotate(-3deg);
+}
+
+
+/* =====================================================
+   FILE INFORMATION
+===================================================== */
+
+.file-info {
+    min-width: 0;
+}
+
+
+.file-info h3 {
+    margin: 0 0 5px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.file-info p {
+    margin: 0;
+
+    color: #746d58;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   DOWNLOAD BUTTON
+===================================================== */
+
+.download-button {
+    flex-shrink: 0;
+
+    padding: 10px 17px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border: 2px solid #29261f;
+
+    border-radius: 100px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 3px 3px 0 #f4a261;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.2s ease;
+}
+
+
+/* =====================================================
+   DOWNLOAD BUTTON HOVER
+===================================================== */
+
+.download-button:hover {
+    background-color: #3b372d;
+
+    transform: translate(-2px, -2px);
+
+    box-shadow: 5px 5px 0 #f4a261;
+}
+
+
+/* =====================================================
+   DOWNLOAD BUTTON CLICK
+===================================================== */
+
+.download-button:active {
+    transform: translate(2px, 2px);
+
+    box-shadow: 1px 1px 0 #f4a261;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .file-card {
+        align-items: flex-start;
+
+        padding: 15px;
+
+        gap: 14px;
+    }
+
+
+    .file-type-icon {
+        width: 46px;
+
+        height: 46px;
+    }
+
+
+    .file-info h3 {
+        max-width: 140px;
+
+        font-size: 14px;
+    }
+
+
+    .download-button {
+        padding: 8px 12px;
+
+        font-size: 10px;
+    }
+
+}

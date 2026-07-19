@@ -1,0 +1,572 @@
+/* =====================================================
+   CUSTOM FONT
+===================================================== */
+
+@font-face {
+    font-family: "Changa One";
+    src: url("../assets/fonts/ChangaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* =====================================================
+   WHOLE PAGE
+===================================================== */
+
+.login-page {
+    min-height: 100vh;
+
+    background-color: #ffee8c;
+
+    background-image:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255, 255, 255, 0.5) 0px,
+            rgba(255, 255, 255, 0.5) 3px,
+            transparent 4px
+        );
+
+    background-size: 42px 42px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.login-content {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 65px 30px;
+}
+
+
+/* =====================================================
+   MAIN LOGIN CARD
+===================================================== */
+
+.login-card {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    min-height: 570px;
+
+    background-color: #fffdf2;
+
+    border: 3px solid #29261f;
+
+    border-radius: 26px;
+
+    overflow: hidden;
+
+    box-shadow: 12px 12px 0 #29261f;
+}
+
+
+/* =====================================================
+   LEFT WELCOME PANEL
+===================================================== */
+
+.login-welcome {
+    padding: 55px 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: #f4a261;
+
+    border-right: 3px solid #29261f;
+
+    position: relative;
+}
+
+
+/* SMALL BADGE */
+
+.welcome-badge {
+    width: fit-content;
+
+    padding: 8px 15px;
+
+    margin-bottom: 25px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border-radius: 100px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* LARGE LEFT HEADING */
+
+.login-welcome h1 {
+    margin: 0 0 22px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 62px;
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    color: #29261f;
+}
+
+
+/* LEFT DESCRIPTION */
+
+.login-welcome p {
+    max-width: 340px;
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #4e4739;
+}
+
+
+/* =====================================================
+   DECORATIVE FILE BOXES
+===================================================== */
+
+.welcome-decoration {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 42px;
+}
+
+
+.welcome-decoration span {
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #ffee8c;
+
+    border: 2px solid #29261f;
+
+    border-radius: 12px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    box-shadow: 3px 3px 0 #29261f;
+}
+
+
+.welcome-decoration span:nth-child(1) {
+    transform: rotate(-6deg);
+}
+
+
+.welcome-decoration span:nth-child(2) {
+    font-family: Arial, sans-serif;
+
+    font-size: 26px;
+
+    transform: translateY(-8px) rotate(4deg);
+}
+
+
+.welcome-decoration span:nth-child(3) {
+    transform: rotate(7deg);
+}
+
+
+/* =====================================================
+   RIGHT FORM SECTION
+===================================================== */
+
+.login-form-section {
+    padding: 55px 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: #fffdf2;
+}
+
+
+/* =====================================================
+   FORM HEADING
+===================================================== */
+
+.login-form-heading {
+    margin-bottom: 32px;
+}
+
+
+.login-form-heading > p {
+    margin-bottom: 7px;
+
+    color: #b56b2f;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.login-form-heading h2 {
+    margin: 0 0 8px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+    color: #29261f;
+}
+
+
+.login-form-heading > span {
+    color: #746d58;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.login-form {
+    width: 100%;
+}
+
+
+/* =====================================================
+   FORM FIELD
+===================================================== */
+
+.login-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+.login-field label {
+    color: #3c382e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.login-field input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #bdb49a;
+
+    border-radius: 10px;
+
+    color: #29261f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.login-field input::placeholder {
+    color: #aaa18b;
+}
+
+
+.login-field input:focus {
+    border-color: #29261f;
+
+    box-shadow: 4px 4px 0 #ffee8c;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.login-button {
+    width: 100%;
+
+    margin-top: 7px;
+
+    padding: 15px;
+
+    background-color: #29261f;
+
+    color: #ffee8c;
+
+    border: 3px solid #29261f;
+
+    border-radius: 11px;
+
+    font-family: "Changa One", Impact, sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    box-shadow: 5px 5px 0 #f4a261;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.2s ease;
+}
+
+
+.login-button:hover {
+    background-color: #3b372d;
+
+    transform: translate(-2px, -2px);
+
+    box-shadow: 7px 7px 0 #f4a261;
+}
+
+
+.login-button:active {
+    transform: translate(2px, 2px);
+
+    box-shadow: 2px 2px 0 #f4a261;
+}
+
+
+/* =====================================================
+   RESPONSE MESSAGE
+===================================================== */
+
+.login-message {
+    margin-top: 18px;
+
+    padding: 10px 14px;
+
+    background-color: #fff4ad;
+
+    border: 1px solid #d7c96e;
+
+    border-radius: 8px;
+
+    color: #413c2e;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   REGISTER LINK
+===================================================== */
+
+.register-link {
+    margin-top: 28px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #ded8c4;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    font-size: 13px;
+}
+
+
+.register-link span {
+    color: #746d58;
+}
+
+
+.register-link a {
+    color: #9b5727;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #9b5727;
+}
+
+
+.register-link a:hover {
+    color: #29261f;
+
+    border-color: #29261f;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .login-content {
+        max-width: 650px;
+
+        padding: 45px 25px;
+    }
+
+
+    .login-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .login-welcome {
+        padding: 40px;
+
+        border-right: none;
+
+        border-bottom: 3px solid #29261f;
+    }
+
+
+    .login-welcome h1 {
+        font-size: 52px;
+    }
+
+
+    .welcome-decoration {
+        margin-top: 28px;
+    }
+
+
+    .login-form-section {
+        padding: 45px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .login-content {
+        padding: 30px 16px 45px;
+    }
+
+
+    .login-card {
+        border-radius: 18px;
+
+        box-shadow: 7px 7px 0 #29261f;
+    }
+
+
+    .login-welcome {
+        padding: 32px 25px;
+    }
+
+
+    .login-welcome h1 {
+        font-size: 44px;
+    }
+
+
+    .login-welcome p {
+        font-size: 14px;
+    }
+
+
+    .welcome-decoration span {
+        width: 48px;
+
+        height: 48px;
+    }
+
+
+    .login-form-section {
+        padding: 35px 25px;
+    }
+
+
+    .login-form-heading h2 {
+        font-size: 40px;
+    }
+
+
+    .register-link {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 5px;
+    }
+
+}
